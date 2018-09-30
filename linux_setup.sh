@@ -14,7 +14,7 @@ fi
 echo "INSTALLING PROGRAMS.."
 sudo apt-get dist-upgrade
 sudo apt-get upgrade
-sudo apt-get -y install vim git redshift anki tmux curl
+sudo apt-get -y install vim git redshift anki tmux curl xclip
 source install_chrome.sh
 
 echo "CONFIGURING PROGRAMS..."
