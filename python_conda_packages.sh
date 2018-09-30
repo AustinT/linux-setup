@@ -4,7 +4,7 @@ conda update -n base conda
 conda install python=3.6
 
 # Standard data processing libraries
-conda install -y numpy scipy matplotlib scikit-learn pandas jupyter jupyterlab ipython sympy seaborn imageio 
+conda install -y numpy scipy matplotlib scikit-learn pandas jupyter jupyterlab ipython sympy seaborn imageio tqdm 
 
 # Machine learning libraries (assuming no gpu)
 pip install -U pip
