@@ -22,15 +22,10 @@ echo "CONFIGURING PROGRAMS..."
 git config --global user.name "Austin T."
 git config --global user.email "$1"
 
-# Add my vim rc file
-git clone https://github.com/AustinT/my_vimrc.git
-mv ./my_vimrc/.vimrc ~/
-source ./my_vimrc/setup_vim_plugins.sh
-rm -rf my_vimrc/
+# Add my vim rc file/plugins
+source setup_vimrc.sh
 
+# ssh keys
 echo "GENERATING SSH KEYS..."
-ssh-keygen -t rsa -b 4096 -C "$1"
-# add to ssh agent
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+source generate_ssh.sh $1
 
