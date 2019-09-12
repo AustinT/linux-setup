@@ -15,7 +15,7 @@ echo "INSTALLING PROGRAMS.."
 sudo apt-get dist-upgrade
 sudo apt-get upgrade
 sudo apt-get -y install vim git redshift tmux curl xclip \
-        make gcc g++ libpng-dev zlib1g-dev \
+        make cmake gcc g++ libpng-dev zlib1g-dev \
         mpv python python-dev p7zip-full
 source install_chrome.sh
 
