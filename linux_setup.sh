@@ -16,7 +16,8 @@ sudo apt-get dist-upgrade
 sudo apt-get upgrade
 sudo apt-get -y install vim git redshift tmux curl xclip \
         make cmake gcc g++ libpng-dev zlib1g-dev \
-        mpv python python-dev p7zip-full
+        mpv python python-dev p7zip-full \
+        nodejs npm
 source install_chrome.sh
 
 echo "CONFIGURING PROGRAMS..."
@@ -35,3 +36,6 @@ cp ./.tmux.conf ~  # Maybe need prefix "I" to install tpm stuff
 echo "GENERATING SSH KEYS..."
 source generate_ssh.sh $1
 
+# Set up directories
+echo "SETTING UP DIRECTORIES"
+mkdir -p ~/scratch
