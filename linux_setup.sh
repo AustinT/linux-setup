@@ -29,8 +29,8 @@ git config --global user.email "$1"
 source setup_vimrc.sh
 
 # Move configs
-echo "Moving configs"
-cp ./.tmux.conf ~  # Maybe need prefix "I" to install tpm stuff
+# Setup tmux
+. tmux.sh
 
 # ssh keys
 echo "GENERATING SSH KEYS..."
