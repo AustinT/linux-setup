@@ -22,3 +22,7 @@ Consider installing the following:
 - java
 - julia
 - R
+
+# Potential Next Steps for this repo
+- Organize scripts more
+- Move dotfiles to their own repo
