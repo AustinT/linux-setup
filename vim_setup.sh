@@ -1,3 +1,6 @@
+# Copy .vimrc
+cp ./.vimrc ~
+
 # Pathogen
 apt-get install curl
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
@@ -15,6 +18,10 @@ git clone --recurse-submodules https://github.com/python-mode/python-mode.git
 # Solarized8
 git clone https://github.com/lifepillar/vim-solarized8.git
 echo "Remember to add colorscheme script to bashrc"
+
+# vim-pandoc (and syntax)
+git clone https://github.com/vim-pandoc/vim-pandoc
+git clone https://github.com/vim-pandoc/vim-pandoc-syntax
 
 # Back to original directory
 cd -

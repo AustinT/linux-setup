@@ -27,6 +27,24 @@ set splitright
 set foldmethod=indent
 set foldlevel=99
 
+" Pane switching made easy
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" ween yourself off arrow keys
+" (comment for scoll support later)
+
+noremap <up> :echoerr "Umm, use k instead"<CR>
+noremap <down> :echoerr "Umm, use j instead"<CR>
+noremap <left> :echoerr "Umm, use h instead"<CR>
+noremap <right> :echoerr "Umm, use l instead"<CR>
+inoremap <up> <NOP>
+inoremap <down> <NOP>
+inoremap <left> <NOP>
+inoremap <right> <NOP>
+
 " Spell check for certain file types
 autocmd BufRead,BufNewFile *.md,*.tex setlocal spell
 
@@ -39,3 +57,19 @@ filetype plugin indent on " load filetype-specific indent files
 " Attempt at setting solarized Colourscheme
 set background=dark
 colorscheme solarized8
+
+" markdown.pandoc
+" Settings borrowed from: https://gitlab.com/skilstak/config/vim/blob/master/vimrc
+
+let g:pandoc#modules#disabled = ["folding"]
+let g:pandoc#syntax#conceal#urls = 1
+let g:pandoc#syntax#conceal#blacklist = ["atx","codeblock_start","codeblock_delim"]
+au syntax * hi link pandocAtxStart Type 
+au syntax * hi link pandocAtxHeader Type
+au syntax * hi Default cterm=none term=none
+au syntax * hi pandocEmphasis cterm=none term=none ctermfg=Magenta 
+au syntax * hi pandocStrong cterm=bold term=bold ctermfg=Magenta 
+au syntax * hi pandocStrongEmphasis cterm=none term=none ctermfg=Red
+au syntax * hi link pandocDelimitedCodeBlock pandocNoFormatted
+au syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
+
