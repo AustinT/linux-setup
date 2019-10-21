@@ -52,6 +52,7 @@ autocmd BufRead,BufNewFile *.md,*.tex setlocal spell
 " install pathogen from here
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+execute pathogen#helptags()
 filetype plugin indent on " load filetype-specific indent files
 
 " Attempt at setting solarized Colourscheme
@@ -72,3 +73,9 @@ au syntax * hi Default cterm=none term=none
 au syntax * hi link pandocDelimitedCodeBlock pandocNoFormatted
 au syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
 
+" vimwiki
+set nocompatible
+" Some tips from: https://opensource.com/article/18/6/vimwiki-gitlab-notes
+let wiki_1 = {}
+let wiki_1.path = '~/Documents/research-wiki'
+let g:vimwiki_list = [wiki_1]

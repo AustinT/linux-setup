@@ -23,5 +23,8 @@ echo "Remember to add colorscheme script to bashrc"
 git clone https://github.com/vim-pandoc/vim-pandoc
 git clone https://github.com/vim-pandoc/vim-pandoc-syntax
 
+# vimwiki
+git clone https://github.com/vimwiki/vimwiki.git
+
 # Back to original directory
 cd -
