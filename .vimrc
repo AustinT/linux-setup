@@ -46,7 +46,7 @@ inoremap <left> <NOP>
 inoremap <right> <NOP>
 
 " Spell check for certain file types
-autocmd BufRead,BufNewFile *.md,*.tex setlocal spell
+autocmd BufRead,BufNewFile *.md,*.tex,*.wiki setlocal spell
 
 " Pathogen settings
 " install pathogen from here
