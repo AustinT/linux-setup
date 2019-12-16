@@ -1,3 +1,14 @@
+# Make sure shell is interactive
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# Useful aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 # Tmux stuff
 export TMUX_TMPDIR=$HOME/.tmux/tmp-dir
 mkdir -p "$TMUX_TMPDIR"
