@@ -36,14 +36,14 @@ map <C-l> <C-W>l
 " ween yourself off arrow keys
 " (comment for scoll support later)
 
-noremap <up> :echoerr "Umm, use k instead"<CR>
-noremap <down> :echoerr "Umm, use j instead"<CR>
-noremap <left> :echoerr "Umm, use h instead"<CR>
-noremap <right> :echoerr "Umm, use l instead"<CR>
-inoremap <up> <NOP>
-inoremap <down> <NOP>
-inoremap <left> <NOP>
-inoremap <right> <NOP>
+" noremap <up> :echoerr "Umm, use k instead"<CR>
+" noremap <down> :echoerr "Umm, use j instead"<CR>
+" noremap <left> :echoerr "Umm, use h instead"<CR>
+" noremap <right> :echoerr "Umm, use l instead"<CR>
+" inoremap <up> <NOP>
+" inoremap <down> <NOP>
+" inoremap <left> <NOP>
+" inoremap <right> <NOP>
 
 " Spell check for certain file types
 autocmd BufRead,BufNewFile *.md,*.tex,*.wiki setlocal spell
