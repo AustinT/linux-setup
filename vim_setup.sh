@@ -9,6 +9,9 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # Install pathogen plugins
 cd ~/.vim/bundle
 
+# vim-sensible: sensible defaults for vim
+git clone https://github.com/tpope/vim-sensible
+
 # Supertab
 git clone https://github.com/ervandew/supertab.git
 

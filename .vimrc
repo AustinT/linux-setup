@@ -3,7 +3,6 @@ set number " show line numbers
 set showcmd " show command in bottom bar
 " set cursorline " highlight current line
 set wildmode=longest,list,full " some tab completion
-set wildmenu " visual autocomplete for command menu
 set lazyredraw " redraw only when necessary
 set showmatch " highlight matching [{()}]
 set hlsearch " highlight matches
@@ -53,7 +52,6 @@ autocmd BufRead,BufNewFile *.md,*.tex,*.wiki setlocal spell
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 execute pathogen#helptags()
-filetype plugin indent on " load filetype-specific indent files
 
 " Attempt at setting solarized Colourscheme
 set background=dark
