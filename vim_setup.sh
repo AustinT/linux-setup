@@ -1,3 +1,4 @@
+
 # Copy .vimrc
 cp ./.vimrc ~
 
@@ -12,8 +13,24 @@ cd ~/.vim/bundle
 # vim-sensible: sensible defaults for vim
 git clone https://github.com/tpope/vim-sensible
 
+# ctrlp plugin (for file search)
+git clone https://github.com/ctrlpvim/ctrlp.vim
+
+# vim-surround (and vim-repeat to complete its functionality)
+git clone https://github.com/tpope/vim-surround
+git clone https://github.com/tpope/vim-repeat
+
+# Nerd commenter
+git clone https://github.com/preservim/nerdcommenter
+
+# Nerd tree
+git clone https://github.com/preservim/nerdtree
+
 # Supertab
 git clone https://github.com/ervandew/supertab.git
+
+# fugitive (git integration)
+git clone https://github.com/tpope/vim-fugitive
 
 # Python-mode
 git clone --recurse-submodules https://github.com/python-mode/python-mode.git
@@ -31,3 +48,18 @@ git clone https://github.com/vimwiki/vimwiki.git
 
 # Back to original directory
 cd -
+
+# NOTES:
+# Packages to consider getting:
+
+# Vim-airline (nice status bar): https://vimawesome.com/plugin/vim-airline-superman
+
+# Instead of python-mode:
+# ================================================
+# you complete me/syntastic/vim-flake8 (should be about the same)
+
+# You Complete Me
+# git clone --recurse-submodules https://github.com/ycm-core/YouCompleteMe
+
+# Syntastic (syntax checking)
+# https://vimawesome.com/plugin/syntastic

@@ -77,3 +77,10 @@ set nocompatible
 let wiki_1 = {}
 let wiki_1.path = '~/Documents/research-wiki'
 let g:vimwiki_list = [wiki_1]
+
+" python-mode
+let g:pymode_rope = 1
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_completion_bind = '<C-Space>'
+
