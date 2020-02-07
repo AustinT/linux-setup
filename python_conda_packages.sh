@@ -3,6 +3,9 @@ conda update -n base conda
 # Standard data processing libraries
 conda install -y numpy scipy matplotlib scikit-learn pandas jupyter jupyterlab ipython sympy seaborn imageio tqdm 
 
+# Note: to get jupyterlab widgets working, you need node/npm.
+# Link: https://ipywidgets.readthedocs.io/en/stable/user_install.html
+
 # Machine learning libraries (assuming no gpu)
 pip install -U pip
 pip install -U sacred hyperopt
