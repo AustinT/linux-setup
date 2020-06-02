@@ -59,8 +59,11 @@ execute pathogen#helptags()
 " filetype plugin indent on " load filetype-specific indent files
 
 " Attempt at setting solarized Colourscheme
-set background=dark
-colorscheme solarized8
+set termguicolors
+set background=light
+"colorscheme solarized8
+autocmd vimenter * colorscheme gruvbox
+let g:gruvbox_italic = 1
 
 " markdown.pandoc
 " Settings borrowed from: https://gitlab.com/skilstak/config/vim/blob/master/vimrc

@@ -38,7 +38,10 @@ git clone --recurse-submodules https://github.com/python-mode/python-mode.git
 
 # Solarized8
 git clone https://github.com/lifepillar/vim-solarized8.git
-echo "Remember to add colorscheme script to bashrc"
+#echo "Remember to add colorscheme script to bashrc"
+
+# gruvbox
+git clone https://github.com/morhetz/gruvbox
 
 # vim-pandoc (and syntax)
 git clone https://github.com/vim-pandoc/vim-pandoc
