@@ -63,7 +63,8 @@ set termguicolors
 set background=light
 "colorscheme solarized8
 autocmd vimenter * colorscheme gruvbox
-let g:gruvbox_italic = 1
+" No italics by default! Fails remotely...
+"let g:gruvbox_italic = 1 
 
 " markdown.pandoc
 " Settings borrowed from: https://gitlab.com/skilstak/config/vim/blob/master/vimrc
