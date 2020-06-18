@@ -62,6 +62,7 @@ execute pathogen#helptags()
 set termguicolors
 set background=light
 "colorscheme solarized8
+let g:gruvbox_guisp_fallback = "bg"
 autocmd vimenter * colorscheme gruvbox
 " No italics by default! Fails remotely...
 "let g:gruvbox_italic = 1 
