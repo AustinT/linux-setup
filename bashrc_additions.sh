@@ -10,7 +10,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # Tmux stuff
-export TMUX_TMPDIR=$HOME/.tmux/tmp-dir
+export TMUX_TMPDIR=$HOME/.tmux/tmp-dir_"$HOSTNAME"
 mkdir -p "$TMUX_TMPDIR"
 
 # Vim colors for fixing issue with truecolor terminals
