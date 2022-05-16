@@ -85,7 +85,7 @@ au syntax * hi SpellBad ctermfg=White ctermbg=Red cterm=none
 set nocompatible
 " Some tips from: https://opensource.com/article/18/6/vimwiki-gitlab-notes
 let wiki_1 = {}
-let wiki_1.path = '~/Documents/research-wiki'
+let wiki_1.path = '~/Documents/work-wiki'
 let g:vimwiki_list = [wiki_1]
 
 " python-mode
