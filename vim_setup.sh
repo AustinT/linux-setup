@@ -1,6 +1,12 @@
-
-# Copy .vimrc
-cp ./.vimrc ~
+# Create default vimrc that links to this repo
+# In the future I should use the `runtime` command instead of
+# `source` but it didn't work when I tried it...
+vim_dir="$HOME/.vim"
+mkdir -p "$vim_dir"
+vimrc_path="${vim_dir}/vimrc"
+if [[ ! -f "$vimrc_path" ]] ; then
+    echo "source $(pwd)/vimrc" > "${vimrc_path}"
+fi
 
 # Pathogen
 mkdir -p ~/.vim/bundle && \
@@ -33,8 +39,8 @@ git clone https://github.com/ervandew/supertab.git
 # fugitive (git integration)
 git clone https://github.com/tpope/vim-fugitive
 
-# Python-mode
-git clone --recurse-submodules https://github.com/python-mode/python-mode.git
+# Python-mode (currently disabled)
+#git clone --recurse-submodules https://github.com/python-mode/python-mode.git
 
 # Solarized8
 git clone https://github.com/lifepillar/vim-solarized8.git
@@ -49,6 +55,9 @@ git clone https://github.com/vim-pandoc/vim-pandoc-syntax
 
 # vimwiki
 git clone https://github.com/vimwiki/vimwiki
+
+# Calendar vim
+git clone https://github.com/mattn/calendar-vim.git
 
 # Back to original directory
 cd -

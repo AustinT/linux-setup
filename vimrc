@@ -64,8 +64,8 @@ set background=light
 "colorscheme solarized8
 let g:gruvbox_guisp_fallback = "bg"
 autocmd vimenter * colorscheme gruvbox
-" No italics by default! Fails remotely...
-"let g:gruvbox_italic = 1 
+" May need to turn off by default since this fails remotely
+let g:gruvbox_italic = 1 
 
 " markdown.pandoc
 " Settings borrowed from: https://gitlab.com/skilstak/config/vim/blob/master/vimrc
@@ -89,8 +89,8 @@ let wiki_1.path = '~/Documents/work-wiki'
 let g:vimwiki_list = [wiki_1]
 
 " python-mode
-let g:pymode_rope = 1
-let g:pymode_rope_completion = 1
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_rope_completion_bind = '<C-Space>'
+"let g:pymode_rope = 1
+"let g:pymode_rope_completion = 1
+"let g:pymode_rope_complete_on_dot = 0
+"let g:pymode_rope_completion_bind = '<C-Space>'
 
