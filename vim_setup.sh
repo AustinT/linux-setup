@@ -8,14 +8,9 @@ if [[ ! -f "$vimrc_path" ]] ; then
     echo "source $(pwd)/vimrc" > "${vimrc_path}"
 fi
 
-# Pathogen
-mkdir -p ~/.vim/bundle && \
-    git clone https://github.com/tpope/vim-pathogen ~/.vim/vim-pathogen && \
-    cp -r ~/.vim/vim-pathogen/autoload ~/.vim/
-#curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-# Install pathogen plugins
-cd ~/.vim/bundle
+plugin_dir="${vim_dir}/pack/plugins/start"
+mkdir -p "$plugin_dir"
+cd "$plugin_dir"
 
 # vim-sensible: sensible defaults for vim
 git clone https://github.com/tpope/vim-sensible

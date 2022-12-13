@@ -51,11 +51,6 @@ set backspace=indent,eol,start " because I had backspace issues
 " Spell check for certain file types
 autocmd BufRead,BufNewFile *.md,*.tex,*.wiki setlocal spell
 
-" Pathogen settings
-" install pathogen from here
-" https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
 " filetype plugin indent on " load filetype-specific indent files
 
 " Attempt at setting solarized Colourscheme
